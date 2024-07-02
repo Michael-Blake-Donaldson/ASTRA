@@ -14,25 +14,6 @@ The Aerospace Simulation Software is a Java-based application that simulates the
 - Java
 - JavaFX
 
-## Project Structure
-AerospaceSimulation/
-│
-├── src/
-│ ├── com/
-│ │ ├── aerospace/
-│ │ │ ├── simulation/
-│ │ │ │ ├── Main.java
-│ │ │ │ ├── Simulation.java
-│ │ │ │ ├── controller/
-│ │ │ │ │ ├── SimulationController.java
-│ │ │ │ │ ├── SimulationTask.java
-│ │ │ │ │ ├── SimulationUIController.java
-│ │ │ │ ├── model/
-│ │ │ │ │ ├── AerospaceVehicle.java
-│ │ │ │ ├── view/
-│ │ │ │ │ ├── MainApp.java
-│ │ │ │ │ ├── SimulationUI.fxml
-
 ### Prerequisites
 - Java Development Kit (JDK) 11 or higher
 - JavaFX SDK
