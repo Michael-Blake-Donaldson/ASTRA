@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.canvas.Canvas?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.aerospace.simulation.controller.SimulationUIController">
+    <HBox spacing="10">
+        <TextField fx:id="nameField" promptText="Vehicle Name" />
+        <TextField fx:id="massField" promptText="Mass (kg)" />
+        <TextField fx:id="thrustField" promptText="Thrust (N)" />
+        <TextField fx:id="dragField" promptText="Drag Coefficient" />
+        <TextField fx:id="liftField" promptText="Lift Coefficient" />
+        <Button text="Add Vehicle" onAction="#addVehicle" />
+    </HBox>
+    <ListView fx:id="vehicleListView" />
+    <HBox spacing="10">
+        <Button text="Start Simulation" onAction="#startSimulation" />
+        <Button text="Stop Simulation" onAction="#stopSimulation" />
+        <Button text="Reset Simulation" onAction="#resetSimulation" />
+    </HBox>
+    <HBox spacing="10">
+        <Button text="Speed Up" onAction="#speedUpSimulation" />
+        <Button text="Slow Down" onAction="#slowDownSimulation" />
+    </HBox>
+    <Label fx:id="simulationStatusLabel" text="Simulation Status: Idle" />
+    <Canvas fx:id="simulationCanvas" width="1200" height="600" />
+</VBox>
